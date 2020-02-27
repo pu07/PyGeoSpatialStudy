@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,45 +76,64 @@
       <option name="presentableId" value="Default" />
       <updated>1582815498561</updated>
     </task>
+    <task id="LOCAL-00001" summary="加入了遥感影像的读取">
+      <created>1582818063941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582818063941</updated>
+    </task>
+    <task id="LOCAL-00002" summary="加入了遥感影像的读取">
+      <created>1582818161428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582818161428</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="加入了遥感影像的读取" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入了遥感影像的读取" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582818134257">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Notifications/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818134257" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1582818063368">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1582818173055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818063368" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818173055" />
     <state x="546" y="259" key="Github.ShareDialog" timestamp="1582818033142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="214" key="GridCell.Tab.0.bottom" timestamp="1582818084658">
+    <state width="1345" height="214" key="GridCell.Tab.0.bottom" timestamp="1582818262857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818084658" />
-    <state width="1345" height="214" key="GridCell.Tab.0.center" timestamp="1582818084658">
+    <state width="1345" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818262857" />
+    <state width="1345" height="214" key="GridCell.Tab.0.center" timestamp="1582818262857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818084658" />
-    <state width="1345" height="214" key="GridCell.Tab.0.left" timestamp="1582818084658">
+    <state width="1345" height="214" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818262857" />
+    <state width="1345" height="214" key="GridCell.Tab.0.left" timestamp="1582818262857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818084658" />
-    <state width="1345" height="214" key="GridCell.Tab.0.right" timestamp="1582818084658">
+    <state width="1345" height="214" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818262857" />
+    <state width="1345" height="214" key="GridCell.Tab.0.right" timestamp="1582818262857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="214" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818084658" />
+    <state width="1345" height="214" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818262857" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1582818112702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818112702" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582815946518">
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582818334412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582815946518" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818334412" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582818044519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
