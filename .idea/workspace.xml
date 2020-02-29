@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/hanititian.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" afterDir="false" />
     </list>
@@ -30,14 +33,36 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GDALRaster" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
       <recent name="D:\GitHub\PyGdalStudy" />
     </key>
   </component>
   <component name="RunManager" selected="Python.GDAL_WriteTIF">
+    <configuration name="GDAL_Calculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyGdalStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GDAL_OpenTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGdalStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +105,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GDAL_ShowTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyGdalStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GDAL_WriteTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGdalStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,6 +150,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.GDAL_WriteTIF" />
+        <item itemvalue="Python.GDAL_Calculation" />
+        <item itemvalue="Python.GDAL_ShowTIF" />
         <item itemvalue="Python.GDAL_OpenTIF" />
         <item itemvalue="Python.GDAL_ReadShp" />
       </list>
@@ -190,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582949256285</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="遥感影像的输出与NDVI计算，定义数据类型为float">
+      <created>1582949479402</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582949479402</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,38 +260,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Notifications/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818134257" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1582949285788">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1582949478838">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949285788" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949478838" />
     <state x="546" y="259" key="Github.ShareDialog" timestamp="1582818033142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="672" height="225" key="GridCell.Tab.0.bottom" timestamp="1582949347464">
+    <state width="1345" height="184" key="GridCell.Tab.0.bottom" timestamp="1582990048497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="225" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949347464" />
-    <state width="672" height="225" key="GridCell.Tab.0.center" timestamp="1582949347464">
+    <state width="1345" height="184" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990048497" />
+    <state width="1345" height="184" key="GridCell.Tab.0.center" timestamp="1582990048497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="225" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949347464" />
-    <state width="672" height="225" key="GridCell.Tab.0.left" timestamp="1582949347464">
+    <state width="1345" height="184" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990048497" />
+    <state width="1345" height="184" key="GridCell.Tab.0.left" timestamp="1582990048497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="225" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949347464" />
-    <state width="672" height="225" key="GridCell.Tab.0.right" timestamp="1582949347464">
+    <state width="1345" height="184" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990048497" />
+    <state width="1345" height="184" key="GridCell.Tab.0.right" timestamp="1582990048497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="225" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949347464" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1582949361355">
+    <state width="1345" height="184" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990048497" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1582949498355">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949361355" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582945018273">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582949498355" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1582990074413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582945018273" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990074413" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582818044519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
