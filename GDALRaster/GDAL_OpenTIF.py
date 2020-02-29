@@ -7,9 +7,9 @@ import os
 def read_img(filename):
     #打开文件
     dataset=gdal.Open(filename)
-    band = dataset.GetRasterBand(1)
+    band1 = dataset.GetRasterBand(1)
     print('-------栅格第一波段数据---------')
-    print (band.ReadAsArray())
+    print (band1.ReadAsArray())
     #栅格矩阵的列数
     im_width = dataset.RasterXSize
     print('-------栅格矩阵的列数---------')
