@@ -9,11 +9,10 @@ def writeimage(filename,dst_filename,data):
     geotransform = dataset.GetGeoTransform()
     format = "GTiff"
     driver = gdal.GetDriverByName( format )
-    dst_ds = driver.Create( dst_filename,dataset.RasterXSize, dataset.RasterYSize,
-                            1, gdal.GDT_Float32 )
+    dst_ds = driver.Create( dst_filename,dataset.RasterXSize, dataset.RasterYSize,1, gdal.GDT_Float32 )
     dst_ds.SetGeoTransform(geotransform )
     dst_ds.SetProjection( projinfo )
-    dst_ds.GetRasterBand(1).WriteArray( data )
+    dst_ds.GetRasterBand(1).WriteArray(data)
     dst_ds = None
 
 #计算NDVI
