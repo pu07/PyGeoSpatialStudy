@@ -39,6 +39,8 @@ def writeimage(InputData,output_filename,OutPutData,format):
 def NDVI_Calculation(rasterdata,outputname):
     #将栅格数据转为数组并定义为数据类型为float
     data = rasterdata.ReadAsArray().astype(np.float)
+    #也可以用波段获取方式，这样更清楚
+    #band1 = dataset.GetRasterBand(1)
     #由于数组是从0开始计数，因此波段名称为0，1，2，3；3为近红外波段；2为红波段
     ndvi = (data[3]-data[2])/(data[3]+data[2])
     #调用栅格输出函数，输出NDVI，并指定为GTiff格式
