@@ -24,16 +24,16 @@ def read_img(filename):
     print (im_proj)
     #将数据写成数组，对应栅格矩阵
     im_data = dataset.ReadAsArray(0,0,im_width,im_height)
+    print('-------影像属性---波段数，行数，列数------')
+    print (im_data.shape)
     print('-------栅格矩阵信息---------')
     print (im_data)
     #清除数据集缓存
-    del dataset
+    del im_data
     #返回获取的参数
-    return im_data
+    return dataset
 
 #切换路径到待处理图像所在文件夹
 os.chdir(r'D:\tmpdata\threelakefarm')
 #读数据并获取影像信息
 data = read_img('S2_20190727San.tif')
-print('-------影像属性---波段数，行数，列数------')
-print (data.shape)
