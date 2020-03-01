@@ -5,6 +5,10 @@ import numpy as np
 #用来正常显示中文标签
 plt.rcParams['font.sans-serif']=['SimHei']
 plt.rcParams['figure.dpi'] = 300 #分辨率
+# 默认的像素：[6.0,4.0]，分辨率为100，图片尺寸为 600&400
+# 指定dpi=200，图片尺寸为 1200*800
+# 指定dpi=300，图片尺寸为 1800*1200
+# 设置figsize可以在不改变分辨率情况下改变比例
 
 #显示灰度图
 def showGreyTIFF(RasterData):
@@ -40,7 +44,7 @@ def showMultiBandTIFFGray(RasterData):
     #打开指定图片
     #image = RasterData.ReadAsArray()
     #定义图片框
-    plt.figure(figsize=(6, 6.5))
+    plt.figure()
     #获取波段数量
     num_bands= RasterData.ReadAsArray().shape[0]
     print('波段数为：'+str(num_bands))

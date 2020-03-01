@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582990227254</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="多波段遥感影像的拆分输出与灰度图并排显示">
+      <created>1583075306626</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583075306626</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,17 +272,18 @@
     <MESSAGE value="遥感影像的输出与NDVI计算" />
     <MESSAGE value="遥感影像的输出与NDVI计算，定义数据类型为float" />
     <MESSAGE value="遥感影像的读写看算" />
-    <option name="LAST_COMMIT_MESSAGE" value="遥感影像的读写看算" />
+    <MESSAGE value="多波段遥感影像的拆分输出与灰度图并排显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="多波段遥感影像的拆分输出与灰度图并排显示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Notifications/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990193327" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1582990235082">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583075306023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990235082" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583075306023" />
     <state x="546" y="259" key="Github.ShareDialog" timestamp="1582818033142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -314,10 +320,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583070660475" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1582990284042">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583075324726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990284042" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583075324726" />
     <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583031306570">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
