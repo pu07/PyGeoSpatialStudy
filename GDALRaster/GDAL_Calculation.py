@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import numpy as np
 import gdal
 import os
@@ -28,10 +29,8 @@ data = read_img('S2_20190727San.tif')
 
 outputname= "S2_20190727San_NDVI.tif"
 #调用NDVI计算函数
-#NDVI_Calculation(data,outputname)
+NDVI_Calculation(data,outputname)
 
-#读数据并获取影像信息
 NDVI_data = read_img(outputname)
 #窗口显示
-showTIF.showGreyTIFF(NDVI_data)
-showTIF.showTIFFbyCV2(NDVI_data)
+#showTIF.showTIFF(NDVI_data)

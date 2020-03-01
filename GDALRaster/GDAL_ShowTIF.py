@@ -1,44 +1,61 @@
+# -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2
 
+#用来正常显示中文标签
+plt.rcParams['font.sans-serif']=['SimHei']
+plt.rcParams['figure.dpi'] = 300 #分辨率
+
+#显示灰度图
 def showGreyTIFF(RasterData):
     #打开指定图片
     image = RasterData.ReadAsArray()
-
     # 加载灰度图，可以添加 cmap 参数解决
     plt.imshow(image, cmap='Greys_r')
     plt.axis('off') # 不显示坐标轴
     #窗口中展示灰度图
     plt.show()
 
+#显示多个图片
 def showTIFF(RasterData):
     #打开指定图片
     image = RasterData.ReadAsArray()
-    #指定图片中的红波段
-    #im_r = image[:, :, 0]  # 红色通道
-    #图片显示红波段
-    #plt.imshow(image, cmap='gist_earth')
+    #定义图片框
+    plt.figure()
+    # 将画板分为1行两列，本幅图位于第一个位置
+    plt.subplot(1,2,1)
+    plt.title("彩色图片")
+    #图片显示原始图像
     plt.imshow(image)
+    # 将画板分为1行两列，本幅图位于第3个位置
+    plt.subplot(1,2,2)
+    plt.title("灰度图")
+    # 加载灰度图，可以添加 cmap 参数解决
+    plt.imshow(image, cmap='Greys_r')
     #窗口中展示图片
     plt.show()
 
-def Bandcompose(InputData):
-    band1 = InputData.GetRasterBand(1)
-    band1_data=band1.ReadAsArray()
-    band2 = InputData.GetRasterBand(2)
-    band2_data=band2.ReadAsArray()
-    band3 = InputData.GetRasterBand(3)
-    band3_data=band3.ReadAsArray()
-    band4 = InputData.GetRasterBand(4)
-    band4_data=band4.ReadAsArray()
-    OutputData = cv2.merge([band4_data,band3_data,band2_data])
-    return OutputData
-
-
-def showTIFFbyCV2(RasterData):
+#显示遥感影像的所有单波段灰度图像
+def showMultiBandTIFFGray(RasterData):
     #打开指定图片
-    image = RasterData.ReadAsArray()
-    cv2.imshow('image',image)
-    cv2.waitKey()
-    cv2.destroyAllWindows()
+    #image = RasterData.ReadAsArray()
+    #定义图片框
+    plt.figure(figsize=(6, 6.5))
+    #获取波段数量
+    num_bands= RasterData.ReadAsArray().shape[0]
+    print('波段数为：'+str(num_bands))
+    for index in range(num_bands):
+        print(index+1)
+        #获取各波段数据，索引是从0开始，0-3，而波段是从1开始，1-4，因此需要给index+1，否则GetRasterBand(0)会出错
+        band = RasterData.GetRasterBand(index+1)
+        #转数组
+        band_data=band.ReadAsArray()
+        # 将画板分为1行多列，各波段从左到右依次排列
+        plt.subplot(1,num_bands,index+1)
+        #图片标题
+        plt.title("band"+str(index+1))
+        #图片显示原始图像
+        plt.imshow(band_data, cmap='Greys_r')
+        plt.axis('off') # 不显示坐标轴
+    #窗口中展示图片
+    plt.show()

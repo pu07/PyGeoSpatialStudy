@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 import numpy as np
 import gdal
 import os
 from GDALRaster.GDAL_OpenTIF import read_img
-from GDALRaster.GDAL_ShowTIF import showTIFF,showGreyTIFF
+from GDALRaster.GDAL_ShowTIF import showTIFF,showGreyTIFF,showMultiBandTIFFGray
 
 #输出栅格函数，指定格式为GTiff
 #InputData用于获取坐标、投影等信息；
@@ -33,17 +34,35 @@ def writeimage(InputData,output_filename,OutPutData,format):
     #清除缓存
     dst_ds = None
 
-#切换路径到待处理图像所在文件夹
-os.chdir(r'D:\tmpdata\threelakefarm')
-#读数据并获取影像信息
-data = read_img('S2_20190727San.tif')
-#获取波段1数据
-band2 = data.GetRasterBand(2)
-showGreyTIFF(band2)
-#转数组
-band2_data=band2.ReadAsArray()
-#输出的NDVI文件名
-outputname= "S2_20190727San_band2.tif"
-#调用栅格输出函数，输出NDVI，并指定为GTiff格式
-writeimage(data,outputname,band2_data,"GTiff")
+#获取影像的所有波段并写入文件夹
+def GetBandFromTIF(path,filename):
+    #切换路径到待处理图像所在文件夹
+    os.chdir(path)
+    #读数据并获取影像信息
+    data = read_img(filename)
+    #获取文件名【不包含后缀名】
+    shorFilename = filename.split('.')[0]
+    #获取波段数量
+    num_bands= data.ReadAsArray().shape[0]
+    print('波段数为：'+str(num_bands))
+    for index in range(num_bands):
+        print(index+1)
+        #获取各波段数据，索引是从0开始，0-3，而波段是从1开始，1-4，因此需要给index+1，否则GetRasterBand(0)会出错
+        band = data.GetRasterBand(index+1)
+        #转数组
+        band_data=band.ReadAsArray()
+        #输出的NDVI文件名
+        outputname= shorFilename+"_band"+str(index+1)+".tif"
+        print('outputname:'+outputname)
+        #调用栅格输出函数，输出NDVI，并指定为GTiff格式
+        writeimage(data,outputname,band_data,"GTiff")
+        #显示各波段灰度图片
+    showMultiBandTIFFGray(data)
+
+#数据所在目录
+path=r'D:\tmpdata\threelakefarm'
+#输入影像文件名
+filename='S2_20190727San.tif'
+#调用函数
+#GetBandFromTIF(path,filename)
 
