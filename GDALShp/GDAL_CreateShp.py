@@ -41,7 +41,7 @@ def WriteVectorFile():
         print("图层创建失败！\n")
         return
 
-    # 下面创建属性表
+    # ----------------------下面创建属性表----------------------------
     # 先创建一个叫FieldID的整型属性
     oFieldID =ogr.FieldDefn("FieldID", ogr.OFTInteger)
     oLayer.CreateField(oFieldID, 1)
@@ -51,14 +51,19 @@ def WriteVectorFile():
     oFieldName.SetWidth(100)
     oLayer.CreateField(oFieldName, 1)
 
+    #--------------------------创建要素--------------------------------
     oDefn = oLayer.GetLayerDefn()
 
     # 创建三角形要素
     oFeatureTriangle = ogr.Feature(oDefn)
+    #设置字段属性值
     oFeatureTriangle.SetField(0, 0)
     oFeatureTriangle.SetField(1, "三角形")
+    #给空间要素赋三角形顶点坐标值----点连成面
     geomTriangle =ogr.CreateGeometryFromWkt("POLYGON ((0 0,20 0,10 15,0 0))")
+    #给要素设置几何属性
     oFeatureTriangle.SetGeometry(geomTriangle)
+    #生成要素
     oLayer.CreateFeature(oFeatureTriangle)
 
     # 创建矩形要素
