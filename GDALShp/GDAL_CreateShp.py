@@ -2,6 +2,7 @@
 try:
     from osgeo import gdal
     from osgeo import ogr
+    from osgeo import osr
 except ImportError:
     import gdal
     import ogr
@@ -30,9 +31,12 @@ def WriteVectorFile():
         print("创建文件【%s】失败！", strVectorFile)
         return
 
+    #定义投影
+    targetSR = osr.SpatialReference()
+    targetSR.ImportFromEPSG(4326) #Geo WGS84
     # 创建图层，创建一个多边形图层，这里没有指定空间参考，如果需要的话，需要在这里进行指定
     papszLCO = []
-    oLayer =oDS.CreateLayer("TestPolygon", None, ogr.wkbPolygon, papszLCO)
+    oLayer =oDS.CreateLayer("TestPolygon", targetSR, ogr.wkbPolygon, papszLCO)
     if oLayer == None:
         print("图层创建失败！\n")
         return
