@@ -21,4 +21,4 @@ def showShp(shpfilename):
 
 #SHP文件路径
 strVectorFile ="D:\\GitHub\PyGdalStudy\\GDALShp\\Data\\TestPolygon.shp"
-showShp(strVectorFile)
+#showShp(strVectorFile)
