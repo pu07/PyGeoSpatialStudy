@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import matplotlib.pyplot as plt
+import os
 import numpy as np
+from GDALRaster.GDAL_OpenTIF import read_img
 
 #用来正常显示中文标签
 plt.rcParams['font.sans-serif']=['SimHei']
-plt.rcParams['figure.dpi'] = 300 #分辨率
+plt.rcParams['figure.dpi'] = 200 #分辨率
 # 默认的像素：[6.0,4.0]，分辨率为100，图片尺寸为 600&400
 # 指定dpi=200，图片尺寸为 1200*800
 # 指定dpi=300，图片尺寸为 1800*1200
@@ -12,7 +14,7 @@ plt.rcParams['figure.dpi'] = 300 #分辨率
 
 #显示灰度图
 def showGreyTIFF(RasterData):
-    #打开指定图片
+    #将图片转为数组
     image = RasterData.ReadAsArray()
     # 加载灰度图，可以添加 cmap 参数解决
     plt.imshow(image, cmap='Greys_r')
@@ -22,7 +24,7 @@ def showGreyTIFF(RasterData):
 
 #显示多个图片
 def showTIFF(RasterData):
-    #打开指定图片
+    #将指定图片转为数组
     image = RasterData.ReadAsArray()
     #定义图片框
     plt.figure()
@@ -63,3 +65,22 @@ def showMultiBandTIFFGray(RasterData):
         plt.axis('off') # 不显示坐标轴
     #窗口中展示图片
     plt.show()
+
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(__file__))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\data')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+    #测试影像数据
+    imagepath ='S2_20190727San.tif'
+    #引入OpenTIF中的图像读取方法读图像数据
+    data = read_img(imagepath)
+    #获取影像的第一波段
+    #band1 = data.GetRasterBand(1)
+    #显示图像
+    showMultiBandTIFFGray(data)

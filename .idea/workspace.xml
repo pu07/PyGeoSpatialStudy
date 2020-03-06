@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GDALRaster/Data/S2_20190727San.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/Data/S2_20190727San_NDVI.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/Data/S2_20190727San_band1.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/Data/S2_20190727San_band2.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/Data/S2_20190727San_band3.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GDALRaster/Data/S2_20190727San_band4.tif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALShp/Data/SpecialTown.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/GDALShp/Data/SpecialTown.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALShp/GDAL_Excel2Shp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALShp/GDAL_Excel2Shp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALShp/GDAL_ShowShp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALShp/GDAL_ShowShp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/hanititian.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +43,21 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/GDALShp/Data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GDALRaster/Data" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
       <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
       <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
       <recent name="D:\GitHub\PyGdalStudy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GDAL_Excel2Shp">
-    <configuration name="GDAL_CreateShp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.GDAL_Calculation">
+    <configuration name="GDAL_Calculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGdalStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,11 +65,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALShp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALShp/GDAL_CreateShp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -87,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GDAL_ShowShp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GDAL_OpenTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGdalStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +107,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALShp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALShp/GDAL_ShowShp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,7 +120,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GDAL_UpdateShp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GDAL_ShowTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGdalStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,11 +128,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALShp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALShp/GDAL_UpdateShp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GDAL_Excel2Shp" />
-        <item itemvalue="Python.GDAL_CreateShp" />
-        <item itemvalue="Python.GDAL_UpdateShp" />
-        <item itemvalue="Python.GDAL_ShowShp" />
+        <item itemvalue="Python.GDAL_Calculation" />
         <item itemvalue="Python.GDAL_WriteTIF" />
+        <item itemvalue="Python.GDAL_ShowTIF" />
+        <item itemvalue="Python.GDAL_OpenTIF" />
+        <item itemvalue="Python.GDAL_Excel2Shp" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583218046102</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="EXCEL表格数据转SHP点文件并显示">
+      <created>1583219601434</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1583219601434</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -332,37 +351,38 @@
     <MESSAGE value="矢量数据读写、显示及更新" />
     <MESSAGE value="矢量数据创建时定义投影" />
     <MESSAGE value="EXCEL表格数据转SHP点文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="EXCEL表格数据转SHP点文件" />
+    <MESSAGE value="EXCEL表格数据转SHP点文件并显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="EXCEL表格数据转SHP点文件并显示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Notifications/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990193327" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583218045326">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583219600814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583218045326" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583219600814" />
     <state x="546" y="259" key="Github.ShareDialog" timestamp="1582818033142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="672" height="222" key="GridCell.Tab.0.bottom" timestamp="1583167627640">
+    <state width="1345" height="190" key="GridCell.Tab.0.bottom" timestamp="1583509013881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583167627640" />
-    <state width="672" height="222" key="GridCell.Tab.0.center" timestamp="1583167627640">
+    <state width="1345" height="190" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583509013881" />
+    <state width="1345" height="190" key="GridCell.Tab.0.center" timestamp="1583509013881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="222" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583167627640" />
-    <state width="672" height="222" key="GridCell.Tab.0.left" timestamp="1583167627640">
+    <state width="1345" height="190" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583509013881" />
+    <state width="1345" height="190" key="GridCell.Tab.0.left" timestamp="1583509013881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="222" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583167627640" />
-    <state width="672" height="222" key="GridCell.Tab.0.right" timestamp="1583167627640">
+    <state width="1345" height="190" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583509013881" />
+    <state width="1345" height="190" key="GridCell.Tab.0.right" timestamp="1583509013881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="672" height="222" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583167627640" />
+    <state width="1345" height="190" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583509013881" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583077791347">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -379,14 +399,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583077791347" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583218064906">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583219618577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583218064906" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583217861096">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583219618577" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583494962024">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583217861096" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583494962024" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582818044519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -59,10 +59,18 @@ def GetBandFromTIF(path,filename):
         #显示各波段灰度图片
     showMultiBandTIFFGray(data)
 
-#数据所在目录
-path=r'D:\tmpdata\threelakefarm'
-#输入影像文件名
-filename='S2_20190727San.tif'
-#调用函数
-#GetBandFromTIF(path,filename)
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(__file__))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\data')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+    #测试影像数据
+    filename ='S2_20190727San.tif'
+    #调用函数
+    GetBandFromTIF(dataPath,filename)
 

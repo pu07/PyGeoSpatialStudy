@@ -7,9 +7,6 @@ import os
 def read_img(filename):
     #打开文件
     dataset=gdal.Open(filename)
-    band1 = dataset.GetRasterBand(1)
-    print('-------栅格第一波段数据---------')
-    print (band1.ReadAsArray())
     #栅格矩阵的列数
     im_width = dataset.RasterXSize
     print('-------栅格矩阵的列数---------')
@@ -33,7 +30,15 @@ def read_img(filename):
     #返回获取的参数
     return dataset
 
-#切换路径到待处理图像所在文件夹
-os.chdir(r'D:\tmpdata\threelakefarm')
-#读数据并获取影像信息
-data = read_img('S2_20190727San.tif')
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(__file__))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\data')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+    #读数据并获取影像信息
+    data = read_img('S2_20190727San.tif')
