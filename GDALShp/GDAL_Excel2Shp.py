@@ -2,7 +2,6 @@
 #导入相关库包
 import osgeo,gdal,os,ogr,osr
 import pandas as pd
-from GDALShp.GDAL_ShowShp import showShp
 
 #读取Excel表格数据
 def readExcelbyFileNameAndSheetName(filename,sheetname):
@@ -43,13 +42,13 @@ def Excel2Shp(path,ExcelName,shpfilename,Lng_columns_num,Lat_columns_num):
     columns,data=readExcelbyFileNameAndSheetName(ExcelName,'Sheet1')
     #获取表头个数
     columns_count = len(columns)
-    print('columns_count==='+str(columns_count))
+    #print('columns_count==='+str(columns_count))
 
     #--------------------------创建属性表字段----------------------------------------
     #遍历所有表头并创建属性表字段
     for i in range(columns_count):
         FieldName = columns[i]
-        print('FieldName==='+FieldName)
+        #print('FieldName==='+FieldName)
 
         #设置字段属性
         fieldDefn = ogr.FieldDefn(FieldName,ogr.OFTString)
@@ -70,10 +69,10 @@ def Excel2Shp(path,ExcelName,shpfilename,Lng_columns_num,Lat_columns_num):
         #获取每一行的X坐标WGS84_Lng，这里的参数是固定的，应该把参数分离出去，写活，
         # #否则换个表，如果存经纬度字段的变了顺序，就会出错
         point_x=float(data[row][Lng_columns_num-1])
-        print('point_x==='+str(point_x))
+        #print('point_x==='+str(point_x))
         #获取每一行的Y坐标WGS84_Lat
         point_y=float(data[row][Lat_columns_num-1])
-        print('point_y==='+str(point_y))
+        #print('point_y==='+str(point_y))
 
         # 创建点要素
         oFeaturePoint = ogr.Feature(featuredefn)
@@ -82,10 +81,10 @@ def Excel2Shp(path,ExcelName,shpfilename,Lng_columns_num,Lat_columns_num):
         for column in range(columns_count):
             #列名：即字段名，这里应该读取SHP的字段名，不能用EXCEL表头，可能会有创建字段时因为字段名太长而丢失完整字段名
             FieldName = columns[column]
-            print('FieldName==='+FieldName)
+            #print('FieldName==='+FieldName)
             #每个cell的数据值
             FieldValue = data[row][column]
-            print('FieldValue==='+str(FieldValue))
+            #print('FieldValue==='+str(FieldValue))
             #给各字段赋值
             oFeaturePoint.SetField(FieldName, FieldValue)
 
@@ -99,16 +98,22 @@ def Excel2Shp(path,ExcelName,shpfilename,Lng_columns_num,Lat_columns_num):
         outlayer.CreateFeature(oFeaturePoint)
 
     outds.Destroy()
+    print('数据集生成成功')
 
-#数据所在目录
-path ="D:\\GitHub\PyGdalStudy\\GDALShp\\Data"
-#目录切换
-os.chdir(path)
-#EXCEL文件名
-ExcelName='SpecialTownList.xlsx'
-#输出SHP文件名
-shpfilename='SpecialTown.shp'
-#调用函数，这个表格中，经度在23列，纬度在24列
-Excel2Shp(path,ExcelName,shpfilename,23,24)
-#显示SHP
-showShp(shpfilename)
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\ShpData')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+
+    #EXCEL文件名
+    ExcelName='SpecialTownList.xlsx'
+    #输出SHP文件名
+    shpfilename='SpecialTown.shp'
+    #调用函数，这个表格中，经度在23列，纬度在24列
+    Excel2Shp(dataPath,ExcelName,shpfilename,23,24)

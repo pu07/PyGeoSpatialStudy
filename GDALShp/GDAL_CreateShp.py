@@ -1,4 +1,5 @@
 #-*- coding: cp936 -*-
+import os
 try:
     from osgeo import gdal
     from osgeo import ogr
@@ -7,13 +8,11 @@ except ImportError:
     import gdal
     import ogr
 
-def WriteVectorFile():
+def WriteVectorFile(strVectorFile):
     # 为了支持中文路径，请添加下面这句代码
     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8","NO")
     # 为了使属性表字段支持中文，请添加下面这句
     gdal.SetConfigOption("SHAPE_ENCODING","GB2312")
-
-    strVectorFile ="D:\\GitHub\PyGdalStudy\\GDALShp\\Data\\TestPolygon.shp"
 
     # 注册所有的驱动
     ogr.RegisterAll()
@@ -46,7 +45,7 @@ def WriteVectorFile():
     oFieldID =ogr.FieldDefn("FieldID", ogr.OFTInteger)
     oLayer.CreateField(oFieldID, 1)
 
-    # 再创建一个叫FeatureName的字符型属性，字符长度为100
+    # 再创建一个叫FieldName的字符型属性，字符长度为100
     oFieldName =ogr.FieldDefn("FieldName", ogr.OFTString)
     oFieldName.SetWidth(100)
     oLayer.CreateField(oFieldName, 1)
@@ -87,5 +86,16 @@ def WriteVectorFile():
     oDS.Destroy()
     print("数据集创建完成！\n")
 
-#测试
-WriteVectorFile()
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\ShpData')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+    strVectorFile ="TestPolygon.shp"
+    #测试
+    WriteVectorFile(strVectorFile)

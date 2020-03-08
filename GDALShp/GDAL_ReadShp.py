@@ -1,5 +1,5 @@
 # -*- coding: cp936 -*-
-
+import os
 
 try:
     from osgeo import gdal
@@ -8,13 +8,40 @@ except ImportError:
     import gdal
     import ogr
 
-def ReadVectorFile():
+
+
+
+#获取SHP字段信息
+#oDefn为图层对象
+def getFieldInfo(oDefn):
+
+    #字段个数
+    iFieldCount = oDefn.GetFieldCount()
+    print('字段个数:'+ str(iFieldCount))
+    #遍历所有字段
+    for iAttr in range(iFieldCount):
+        #字段对象
+        oField = oDefn.GetFieldDefn(iAttr)
+        #输出字段信息；python中较长的语句如果一行写不完可以用“\”来连接多行语句
+        #Python格式化输出%s和%d 可参考博客https://www.cnblogs.com/linguansheng/p/10184102.html
+
+        print("%s: %s(%d.%d)" % ( \
+            #字段名称
+            oField.GetNameRef(), \
+            #字段类型
+            oField.GetFieldTypeName(oField.GetType()), \
+            #字段长度
+            oField.GetWidth(), \
+            #字段精度
+            oField.GetPrecision()))
+
+
+
+def ReadVectorFile(strVectorFile):
     # 为了支持中文路径，请添加下面这句代码
     gdal.SetConfigOption("GDAL_FILENAME_IS_UTF8", "NO")
     # 为了使属性表字段支持中文，请添加下面这句，设置编码方式为GB2312
     gdal.SetConfigOption("SHAPE_ENCODING", "GB2312")
-    #SHP文件路径
-    strVectorFile = "D:\\tmpdata\\boundary\\ChinaProvince\\ChinaProvince.shp"
     # 注册所有的驱动
     ogr.RegisterAll()
     # 打开数据
@@ -105,5 +132,16 @@ def ReadVectorFile():
         oFeature = oLayer.GetNextFeature()
     print("数据集关闭！")
 
-#调用测试函数
-ReadVectorFile()
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\ShpData')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+    strVectorFile ="TestPolygon.shp"
+    #调用测试函数
+    ReadVectorFile(strVectorFile)

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PyGdalStudy.iml" filepath="$PROJECT_DIR$/.idea/PyGdalStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PyGeoSpatialStudy.iml" filepath="$PROJECT_DIR$/.idea/PyGeoSpatialStudy.iml" />
     </modules>
   </component>
 </project>

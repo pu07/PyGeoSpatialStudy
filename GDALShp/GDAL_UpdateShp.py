@@ -1,4 +1,4 @@
-import sys
+import sys,os
 from osgeo import gdal
 from osgeo import ogr
 
@@ -65,5 +65,15 @@ def UpdateShp(pathname):
     #feature.Destroy()
     ds.Destroy()
 
-pathname = 'D:\\GitHub\PyGdalStudy\\GDALShp\\Data\\TestPolygon.shp'
-UpdateShp(pathname)
+#主函数
+if __name__ == '__main__':
+    #获取工程根目录的路径
+    rootPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    #print('rootPath:'+rootPath)
+    #数据文件路径
+    dataPath = os.path.abspath(rootPath + r'\ShpData')
+    #print('dataPath:'+dataPath)
+    #切换目录
+    os.chdir(dataPath)
+    strVectorFile ="TestPolygon.shp"
+    UpdateShp(strVectorFile)

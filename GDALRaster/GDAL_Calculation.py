@@ -34,10 +34,10 @@ def NDVI_Calculation(imagepath):
 #主函数
 if __name__ == '__main__':
     #获取工程根目录的路径
-    rootPath = os.path.abspath(os.path.dirname(__file__))
+    rootPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
     #print('rootPath:'+rootPath)
     #数据文件路径
-    dataPath = os.path.abspath(rootPath + r'\data')
+    dataPath = os.path.abspath(rootPath + r'\RasterData')
     #print('dataPath:'+dataPath)
     #切换目录
     os.chdir(dataPath)
