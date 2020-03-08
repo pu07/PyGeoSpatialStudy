@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShowShp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpShow.py" afterDir="false" />
-    </list>
+    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -345,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583677904809</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="重新整理修改了工程、数据目录与代码目录&#10;新增了Geopandas地图可视化测试">
+      <created>1583682112481</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1583682112481</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -362,37 +365,42 @@
     <MESSAGE value="EXCEL表格数据转SHP点文件并显示" />
     <MESSAGE value="遥感影像的读、写、看、算四个方法，并加了入测试数据" />
     <MESSAGE value="重新整理修改了工程、数据目录与代码目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="重新整理修改了工程、数据目录与代码目录" />
+    <MESSAGE value="重新整理修改了工程、数据目录与代码目录&#10;新增了Geopandas地图可视化测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="重新整理修改了工程、数据目录与代码目录&#10;新增了Geopandas地图可视化测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#Notifications/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582990193327" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583677903201">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583682111430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583677903201" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682111430" />
+    <state x="496" y="278" key="Github.CreateGistDialog" timestamp="1583682352711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="496" y="278" key="Github.CreateGistDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682352711" />
     <state x="546" y="259" key="Github.ShareDialog" timestamp="1582818033142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="191" key="GridCell.Tab.0.bottom" timestamp="1583681962952">
+    <state width="1345" height="191" key="GridCell.Tab.0.bottom" timestamp="1583682130882">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="191" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583681962952" />
-    <state width="1345" height="191" key="GridCell.Tab.0.center" timestamp="1583681962951">
+    <state width="1345" height="191" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682130882" />
+    <state width="1345" height="191" key="GridCell.Tab.0.center" timestamp="1583682130882">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="191" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583681962951" />
-    <state width="1345" height="191" key="GridCell.Tab.0.left" timestamp="1583681962951">
+    <state width="1345" height="191" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682130882" />
+    <state width="1345" height="191" key="GridCell.Tab.0.left" timestamp="1583682130881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="191" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583681962951" />
-    <state width="1345" height="191" key="GridCell.Tab.0.right" timestamp="1583681962951">
+    <state width="1345" height="191" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682130881" />
+    <state width="1345" height="191" key="GridCell.Tab.0.right" timestamp="1583682130882">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="191" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583681962951" />
+    <state width="1345" height="191" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682130882" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -413,10 +421,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583510039988" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583672602215">
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583682156314">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672602215" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583682156314" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582818044519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
