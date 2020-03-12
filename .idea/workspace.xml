@@ -2,8 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RasterData/S2_20190727San_234.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RasterData/xinghuaduotian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.cpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.shx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALShp/GDAL_BufferShp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +61,26 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ShpData" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/RasterData" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\PyGeoSpatialStudy" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\GDALShp" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\Analysis_Show" />
       <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
-      <recent name="D:\GitHub\PyGdalStudy" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.GeoPandas_Point2shp">
-    <configuration name="GDAL_ReadShp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.GeoPandas_ShpAnalysis">
+    <configuration name="GDAL_Calculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALShp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALShp/GDAL_ReadShp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -73,7 +101,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GDAL_UpdateShp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="GDAL_ShowTIF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,11 +109,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALShp" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDALRaster" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALShp/GDAL_UpdateShp.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,6 +143,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GeoPandas_ShpAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyGeoSpatialStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GeoPandas_ShpMap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,34 +185,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GeoPandas_ShpShow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PyGeoSpatialStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GeoSpatialExample" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\GitHub\PyGeoSpatialStudy\GeoSpatialExample\GeoPandas_ShpShow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GeoPandas_ShpAnalysis" />
         <item itemvalue="Python.GeoPandas_Point2shp" />
         <item itemvalue="Python.GeoPandas_ShpMap" />
-        <item itemvalue="Python.GeoPandas_ShpShow" />
-        <item itemvalue="Python.GDAL_ReadShp" />
-        <item itemvalue="Python.GDAL_UpdateShp" />
+        <item itemvalue="Python.GDAL_Calculation" />
+        <item itemvalue="Python.GDAL_ShowTIF" />
       </list>
     </recent_temporary>
   </component>
@@ -395,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583753141862</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单">
+      <created>1583753604494</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1583753604494</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -416,7 +451,8 @@
     <MESSAGE value="缓冲区分析并输出SHP" />
     <MESSAGE value="缓冲区分析并输出SHP【本地SHP文件测试通过】" />
     <MESSAGE value="EXCEL2shp示例OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="EXCEL2shp示例OK" />
+    <MESSAGE value="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单" />
+    <option name="LAST_COMMIT_MESSAGE" value="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -427,10 +463,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583753141139">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583753603730">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583753141139" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583753603730" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -443,22 +479,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="253" key="GridCell.Tab.0.bottom" timestamp="1583752297193">
+    <state width="1345" height="201" key="GridCell.Tab.0.bottom" timestamp="1584031669157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="253" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583752297193" />
-    <state width="1345" height="253" key="GridCell.Tab.0.center" timestamp="1583752297193">
+    <state width="1345" height="201" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
+    <state width="1345" height="201" key="GridCell.Tab.0.center" timestamp="1584031669157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="253" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583752297193" />
-    <state width="1345" height="253" key="GridCell.Tab.0.left" timestamp="1583752297193">
+    <state width="1345" height="201" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
+    <state width="1345" height="201" key="GridCell.Tab.0.left" timestamp="1584031669157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="253" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583752297193" />
-    <state width="1345" height="253" key="GridCell.Tab.0.right" timestamp="1583752297193">
+    <state width="1345" height="201" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
+    <state width="1345" height="201" key="GridCell.Tab.0.right" timestamp="1584031669157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="253" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583752297193" />
+    <state width="1345" height="201" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -475,18 +511,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="266" y="10" key="SettingsEditor" timestamp="1583717407398">
+    <state x="266" y="10" key="SettingsEditor" timestamp="1584032068734">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="266" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583717407398" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583753160312">
+    <state x="266" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584032068734" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583753629731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583753160312" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583717163061">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583753629731" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583987826454">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583717163061" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583987826454" />
+    <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583934947397" />
     <state x="477" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582818044519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

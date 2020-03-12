@@ -1,7 +1,6 @@
 # _*_ coding: cp936 _*_
 # 导入geopandas
 import geopandas,os
-from geopandas import GeoSeries
 import pandas as pd
 import matplotlib.pyplot as plt
 from shapely.geometry import Point

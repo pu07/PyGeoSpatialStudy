@@ -3,15 +3,15 @@ import numpy as np
 import gdal
 import os
 import matplotlib.pyplot as plt
-from GDALRaster.GDAL_OpenTIF import read_img
-from GDALRaster.GDAL_WriteTIF import writeimage
+from GDALRaster.GDAL_OpenTIF import read_img,read_tif
+from GDALRaster.GDAL_WriteTIF import writeimage,write_tif
 import GDALRaster.GDAL_ShowTIF as showTIF
 
+#--------------------测试NDVI计算并输出栅格-------------------
 #计算NDVI
 #data原始影像
 #outputname输出NDVI文件名
 def NDVI_Calculation(imagepath):
-
     #引入OpenTIF中的图像读取方法读图像数据
     rasterdata = read_img(imagepath)
     #获取文件名【不包含后缀名】
@@ -24,13 +24,26 @@ def NDVI_Calculation(imagepath):
     outputname= shorFilename+"_NDVI.tif"
     print('outputname:'+outputname)
     #调用栅格输出函数，输出NDVI，并指定为GTiff格式
-    writeimage(rasterdata,outputname,ndvi,"GTiff")
+    #writeimage(rasterdata,outputname,ndvi,"GTiff")
     print(outputname+'已OK')
     NDVI_data = read_img(outputname)
     #窗口显示
-    showTIF.showTIFF(NDVI_data)
+    showTIF.ShowTIFFBoxplot(NDVI_data)
 
-#--------------------测试NDVI计算并输出栅格-------------------
+#波段重组4to3,234
+def ComBandsTIFF(inputfile,outfilename):
+
+    proj,geotrans,data,row1,column1 =read_tif(inputfile)
+    data1=data[0]
+    data2=data[1]
+    data3=data[2]
+    data4=data[3]
+
+    bands_array = np.array((data2,data3, data4),dtype = data2.dtype)
+    print(bands_array)
+    write_tif(outfilename, proj, geotrans, bands_array)
+
+
 #主函数
 if __name__ == '__main__':
     #获取工程根目录的路径
@@ -45,3 +58,5 @@ if __name__ == '__main__':
     imagepath ='S2_20190727San.tif'
     #调用NDVI计算方法
     NDVI_Calculation(imagepath)
+    #filename = 'S2_20190727San_234.tif'
+    #ComBandsTIFF(imagepath,filename)
