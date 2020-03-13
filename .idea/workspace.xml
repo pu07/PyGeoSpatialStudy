@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ShpData/china-shapefiles.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,25 +35,25 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/RasterData" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ShpData" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
-      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
-      <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\PyGeoSpatialStudy" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\GDALShp" />
       <recent name="D:\GitHub\PyGeoSpatialStudy\Analysis_Show" />
       <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PyGeoSpatialStudy\ShpData" />
+      <recent name="D:\GitHub\PyGeoSpatialStudy\RasterData" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster\Data" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALShp\Data" />
+      <recent name="D:\GitHub\PyGdalStudy\GDALRaster" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.GeoPandas_ShpAnalysis">
+  <component name="RunManager" selected="Python.GeoPandas_ShpMap">
     <configuration name="GDAL_Calculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyGeoSpatialStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,9 +161,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GeoPandas_ShpMap" />
         <item itemvalue="Python.GeoPandas_ShpAnalysis" />
         <item itemvalue="Python.GeoPandas_Point2shp" />
-        <item itemvalue="Python.GeoPandas_ShpMap" />
         <item itemvalue="Python.GDAL_Calculation" />
         <item itemvalue="Python.GDAL_ShowTIF" />
       </list>
@@ -409,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584032174350</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="叠加分析进行了优化">
+      <created>1584096123657</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1584096123657</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -432,7 +441,8 @@
     <MESSAGE value="EXCEL2shp示例OK" />
     <MESSAGE value="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单" />
     <MESSAGE value="影像读写增加了方法，栅格显示中增加了直方图计算&#10;矢量空间分析中加入了叠加分析&#10;缓冲区方法单独分离出来，单独建了一个空间分析类&#10;数据进行了多个测试有了变更" />
-    <option name="LAST_COMMIT_MESSAGE" value="影像读写增加了方法，栅格显示中增加了直方图计算&#10;矢量空间分析中加入了叠加分析&#10;缓冲区方法单独分离出来，单独建了一个空间分析类&#10;数据进行了多个测试有了变更" />
+    <MESSAGE value="叠加分析进行了优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="叠加分析进行了优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -443,10 +453,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584032173326">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584096123066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584032173326" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584096123066" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -459,22 +469,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="127" key="GridCell.Tab.0.bottom" timestamp="1584094104587">
+    <state width="1345" height="146" key="GridCell.Tab.0.bottom" timestamp="1584115777607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="127" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
-    <state width="1345" height="127" key="GridCell.Tab.0.center" timestamp="1584094104587">
+    <state width="1345" height="146" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584115777607" />
+    <state width="1345" height="146" key="GridCell.Tab.0.center" timestamp="1584115777606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="127" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
-    <state width="1345" height="127" key="GridCell.Tab.0.left" timestamp="1584094104587">
+    <state width="1345" height="146" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584115777606" />
+    <state width="1345" height="146" key="GridCell.Tab.0.left" timestamp="1584115777606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="127" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
-    <state width="1345" height="127" key="GridCell.Tab.0.right" timestamp="1584094104587">
+    <state width="1345" height="146" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584115777606" />
+    <state width="1345" height="146" key="GridCell.Tab.0.right" timestamp="1584115777607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="127" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
+    <state width="1345" height="146" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584115777607" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -491,10 +501,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="266" y="10" key="SettingsEditor" timestamp="1584096094880">
+    <state x="266" y="10" key="SettingsEditor" timestamp="1584115834648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="266" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584096094880" />
+    <state x="266" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584115834648" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583753629731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

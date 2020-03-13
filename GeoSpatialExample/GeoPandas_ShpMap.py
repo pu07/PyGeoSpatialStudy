@@ -6,10 +6,12 @@
 # 导入geopandas
 import geopandas,os
 import matplotlib.pyplot as plt
+from shapely.geometry import Point
 
 #用来正常显示中文标签
-#plt.rcParams['font.sans-serif']=['SimHei']
-plt.rcParams['figure.dpi'] = 200 #分辨率
+plt.rcParams['font.sans-serif']=['SimHei']
+plt.rcParams['axes.unicode_minus'] = False# 显示负号
+plt.rcParams['figure.dpi'] = 100 #分辨率
 
 #利用geopandas打开shp数据并绘图
 def ShpMapWithLenged():
@@ -45,6 +47,51 @@ def ShpTwoLayersMap():
     cities.plot(ax=base, marker='o', color='green', markersize=5)
     plt.show()
 
+#代码来源于博客:https://blog.csdn.net/fengdu78/article/details/104624007/
+#数据来源于网站：https://gitee.com/zhuliupiaoxue/china-shapefiles
+#免责声明：中国地图数据来源于网络，并非测绘局官方权威发布，仅用于测试，不涉及任何国界国土等争议问题
+def ShpChinaFullMap():
+
+    # 定义CRS
+    # 读入中国领土面数据
+    china = geopandas.read_file('zip://china-shapefiles.zip!china-shapefiles/china.shp',
+                          encoding='utf-8')
+    china.crs = "EPSG:4480" #China Geodetic Coordinate System 2000
+
+    # 由于每行数据是单独的面，因此按照其省份列OWNER融合
+    china = china.dissolve(by='OWNER').reset_index(drop=False)
+
+    # 读入南海九段线线数据
+    nine_lines = geopandas.read_file('zip://china-shapefiles.zip!china-shapefiles/china_nine_dotted_line.shp',
+                               encoding='utf-8')
+    nine_lines.crs = "EPSG:4480"
+    # 初始化图床
+    fig, ax = plt.subplots(figsize=(12, 8))
+
+    ax = china.geometry.plot(ax=ax,facecolor='white',
+                             edgecolor='black',
+                             #linestyle='--',
+                             #hatch='xxxx',
+                             alpha=0.6)
+    ax = nine_lines.geometry.plot(ax=ax,
+                                  edgecolor='black',
+                                  alpha=0.6,
+                                  label='南海九段线')
+    # ax = china.geometry.representative_point()\
+    #     .plot(ax=ax,
+    #           facecolor='black',
+    #           marker='p',
+    #           markersize=200,
+    #           label='省级单位')
+    # 单独提前设置图例标题大小
+    plt.rcParams['legend.title_fontsize'] = 14
+
+    # 设置图例标题，位置，排列方式，是否带有阴影
+    ax.legend(title="图例", loc='lower left', ncol=1, shadow=True)
+
+    plt.show()
+
+
 #主函数
 if __name__ == '__main__':
 
@@ -59,4 +106,5 @@ if __name__ == '__main__':
     strVectorFile ="SpecialTown.shp"
     #获取工程根目录的路径
     #ShpMapWithLenged()
-    ShpTwoLayersMap()
+    #ShpTwoLayersMap()
+    ShpChinaFullMap()

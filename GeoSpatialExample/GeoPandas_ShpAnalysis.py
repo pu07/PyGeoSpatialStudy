@@ -53,7 +53,6 @@ def overlay():
     ax = df1.plot(color='red')
     df2.plot(ax=ax, color='green', alpha=0.5)
     plt.title('data')
-    plt.show()
 
     #联合
     res_union = geopandas.overlay(df1, df2, how='union')
@@ -62,7 +61,6 @@ def overlay():
     df1.plot(ax=ax, facecolor='none', edgecolor='k')
     df2.plot(ax=ax, facecolor='none', edgecolor='k')
     plt.title('union')
-    plt.show()
 
     #相交
     res_intersection = geopandas.overlay(df1, df2, how='intersection')
@@ -71,7 +69,6 @@ def overlay():
     df1.plot(ax=ax, facecolor='none', edgecolor='k')
     df2.plot(ax=ax, facecolor='none', edgecolor='k')
     plt.title('intersection')
-    plt.show()
 
     #交集取反
     res_symdiff = geopandas.overlay(df1, df2, how='symmetric_difference')
