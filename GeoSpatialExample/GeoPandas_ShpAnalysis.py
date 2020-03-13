@@ -84,9 +84,7 @@ def overlay():
 
 
 
-
-
-#相交【叠加】分析
+#叠加分析
 def interacte(shp_a,shp_b):
     df_a = geopandas.read_file(shp_a,encoding ="gb18030")
     print(df_a)
@@ -94,14 +92,23 @@ def interacte(shp_a,shp_b):
     print(df_b)
     ax = df_a.plot(color='white', edgecolor='black')
     df_b.plot(ax=ax, color='green',edgecolor='red', alpha=0.5)
-    plt.show()
+    #plt.show()
+    #给数据B增加一个字段same，并定义相同的属性值dissolveall，为融合全部要素做准备
+    df_b['same'] = 'dissolveall'
+    #把全部要素融合
+    df_b_dissolve = df_b.dissolve(by='same')
+    df_b_dissolve.plot(alpha=0.5, cmap='tab10')
+    # plt.show()
+    print('------------dissolve结果---------')
+    print(df_b_dissolve.head())
 
-    res_intersection = geopandas.overlay(df_a, df_b, how='intersection')
+    res_intersection = geopandas.overlay(df_a, df_b_dissolve, how='intersection')
     print('-----------------------相交结果----------------------------')
     print(res_intersection)
     ax = res_intersection.plot(alpha=0.5, cmap='tab10')
-    df_a.plot(ax=ax, facecolor='none', edgecolor='red')
-    df_b.plot(ax=ax, facecolor='green', edgecolor='k')
+
+    df_b_dissolve.plot(ax=ax, alpha=0.5,facecolor='green')
+    df_a.plot(ax=ax, facecolor='red',alpha=0.7 )
     plt.title('intersection')
     plt.show()
 
@@ -120,6 +127,6 @@ if __name__ == '__main__':
 
     #ShpBuffer(strVectorFile,0.1)
     shp_a='GIAHS_buffer_0.1km.shp'
-    shp_b='SpecialTown_buffer_0.5km.shp'
+    shp_b='SpecialTown_buffer_1km.shp'
     interacte(shp_a,shp_b)
     #overlay()

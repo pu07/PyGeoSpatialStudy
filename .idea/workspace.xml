@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasterData/S2_20190727San_234.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RasterData/xinghuaduotian.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.1km.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_0.5km.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/GIAHS_buffer_1km.shx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.cpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.dbf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.prj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.shp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShpData/SpecialTown_buffer_0.5km.shx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_Calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_OpenTIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_ShowTIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" beforeDir="false" afterPath="$PROJECT_DIR$/GDALRaster/GDAL_WriteTIF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_Point2shp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpMap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/GeoPandas_ShpAnalysis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -430,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583753604494</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="影像读写增加了方法，栅格显示中增加了直方图计算&#10;矢量空间分析中加入了叠加分析&#10;缓冲区方法单独分离出来，单独建了一个空间分析类&#10;数据进行了多个测试有了变更">
+      <created>1584032174350</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1584032174350</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -452,7 +431,8 @@
     <MESSAGE value="缓冲区分析并输出SHP【本地SHP文件测试通过】" />
     <MESSAGE value="EXCEL2shp示例OK" />
     <MESSAGE value="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单" />
-    <option name="LAST_COMMIT_MESSAGE" value="去掉GDAL的缓冲区分析&#10;用Geopandas进行分析简单" />
+    <MESSAGE value="影像读写增加了方法，栅格显示中增加了直方图计算&#10;矢量空间分析中加入了叠加分析&#10;缓冲区方法单独分离出来，单独建了一个空间分析类&#10;数据进行了多个测试有了变更" />
+    <option name="LAST_COMMIT_MESSAGE" value="影像读写增加了方法，栅格显示中增加了直方图计算&#10;矢量空间分析中加入了叠加分析&#10;缓冲区方法单独分离出来，单独建了一个空间分析类&#10;数据进行了多个测试有了变更" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -463,10 +443,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1583753603730">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584032173326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583753603730" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584032173326" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -479,22 +459,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="201" key="GridCell.Tab.0.bottom" timestamp="1584031669157">
+    <state width="1345" height="127" key="GridCell.Tab.0.bottom" timestamp="1584094104587">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="201" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
-    <state width="1345" height="201" key="GridCell.Tab.0.center" timestamp="1584031669157">
+    <state width="1345" height="127" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
+    <state width="1345" height="127" key="GridCell.Tab.0.center" timestamp="1584094104587">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="201" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
-    <state width="1345" height="201" key="GridCell.Tab.0.left" timestamp="1584031669157">
+    <state width="1345" height="127" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
+    <state width="1345" height="127" key="GridCell.Tab.0.left" timestamp="1584094104587">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="201" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
-    <state width="1345" height="201" key="GridCell.Tab.0.right" timestamp="1584031669157">
+    <state width="1345" height="127" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
+    <state width="1345" height="127" key="GridCell.Tab.0.right" timestamp="1584094104587">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="201" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584031669157" />
+    <state width="1345" height="127" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584094104587" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -511,18 +491,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="266" y="10" key="SettingsEditor" timestamp="1584032068734">
+    <state x="266" y="10" key="SettingsEditor" timestamp="1584096094880">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="266" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584032068734" />
+    <state x="266" y="10" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584096094880" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1583753629731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583753629731" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583987826454">
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584090248212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583987826454" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584090248212" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
