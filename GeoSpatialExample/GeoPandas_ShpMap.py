@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from shapely.geometry import Point
 
 #用来正常显示中文标签
-plt.rcParams['font.sans-serif']=['SimHei']
+plt.rcParams['font.sans-serif']=['KaiTi_GB2312']
 plt.rcParams['axes.unicode_minus'] = False# 显示负号
 plt.rcParams['figure.dpi'] = 100 #分辨率
 
@@ -46,6 +46,53 @@ def ShpTwoLayersMap():
     #城市点地图显示参数设置，加载世界地底为底图，标记点大小为5，颜色为绿色
     cities.plot(ax=base, marker='o', color='green', markersize=5)
     plt.show()
+
+#属性分级渲染及自定义图例
+def ColorAttribute(strVectorFile):
+    fig, ax = plt.subplots(figsize=(12, 12))
+    # # 读入中国领土面数据
+    # china = geopandas.read_file('zip://china-shapefiles.zip!china-shapefiles/china.shp',
+    #                             encoding='utf-8')
+    # # china.crs = "EPSG:4480" #China Geodetic Coordinate System 2000
+    #
+    # # 由于每行数据是单独的面，因此按照其省份列OWNER融合
+    # china = china.dissolve(by='OWNER').reset_index(drop=False)
+    #
+    # # 读入南海九段线线数据
+    # nine_lines = geopandas.read_file('zip://china-shapefiles.zip!china-shapefiles/china_nine_dotted_line.shp',
+    #                                  encoding='utf-8')
+    # nine_lines.crs = "EPSG:4480"
+    specialTown = geopandas.read_file(strVectorFile)
+    # specialTown.crs = "EPSG:4480"
+    # ax = china.geometry.plot(ax=ax,facecolor='white',
+    #                          edgecolor='black',
+    #                          #linestyle='--',
+    #                          #hatch='xxxx',
+    #                          alpha=0.6)
+    # ax = nine_lines.geometry.plot(ax=ax,
+    #                               edgecolor='black',
+    #                               alpha=0.6)
+
+    ax = specialTown.plot(ax=ax,
+                          column='GDP1Y',
+                          cmap='Reds',
+                          # missing_kwds={
+                          #     "color": "lightgrey",
+                          #     "edgecolor": "black",
+                          #     "hatch": "////"
+                          # },
+                          legend=True,#添加图例
+                          scheme='NaturalBreaks',#自然断点法
+                          k=5,#分5级
+                          legend_kwds={#图像属性设置
+                              'loc': 'lower left',#显示位置，左下角
+                              'title': 'GDP(100 Million CNY)',#图像标题
+                              'shadow': True #开启阴影
+                          })
+    #这里都是英文和数字，因此用Times New Roman字体
+    plt.rcParams['font.sans-serif']=['Times New Roman']
+    plt.show()
+
 
 #代码来源于博客:https://blog.csdn.net/fengdu78/article/details/104624007/
 #数据来源于网站：https://gitee.com/zhuliupiaoxue/china-shapefiles
@@ -103,8 +150,10 @@ if __name__ == '__main__':
     #print('dataPath:'+dataPath)
     #切换目录
     os.chdir(dataPath)
+    #指定数据文件
     strVectorFile ="SpecialTown.shp"
     #获取工程根目录的路径
     #ShpMapWithLenged()
     #ShpTwoLayersMap()
-    ShpChinaFullMap()
+    #ShpChinaFullMap()
+    ColorAttribute(strVectorFile)
