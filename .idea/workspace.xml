@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/OpenCV_RasterShow.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeoSpatialExample/OpenCV_RasterShow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/CrayfishRice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Image/CrayfishRice.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/ShaLake.png" beforeDir="false" afterPath="$PROJECT_DIR$/Image/ShaHu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/YellowPeaches.jpg.aux.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/YellowPeaches.jpg.ovr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/OpenCV_RasterShow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/CrayfishRice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/ShaHu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image/YellowPeaches.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -441,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584180453705</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="图像处理之轮廓提取，以沙湖轮廓提取为例，修改了显示结果的方式&#10;修改了直方图统计显示结果的方式&#10;再以稻田照片为例，进行了水稻范围提取举例">
+      <created>1584202456629</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1584202456629</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -468,7 +474,8 @@
     <MESSAGE value="中国地图的制图数据及制图方法包含自定义图例" />
     <MESSAGE value="属性分级渲染及自定义图例" />
     <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例" />
-    <option name="LAST_COMMIT_MESSAGE" value="图像处理之轮廓提取，以沙湖轮廓提取为例" />
+    <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例，修改了显示结果的方式&#10;修改了直方图统计显示结果的方式&#10;再以稻田照片为例，进行了水稻范围提取举例" />
+    <option name="LAST_COMMIT_MESSAGE" value="图像处理之轮廓提取，以沙湖轮廓提取为例，修改了显示结果的方式&#10;修改了直方图统计显示结果的方式&#10;再以稻田照片为例，进行了水稻范围提取举例" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -479,10 +486,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584180453052">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584202455769">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584180453052" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202455769" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -495,22 +502,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="546" y="259" key="Github.ShareDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1582818033142" />
-    <state width="1345" height="187" key="GridCell.Tab.0.bottom" timestamp="1584201838630">
+    <state width="1345" height="187" key="GridCell.Tab.0.bottom" timestamp="1584202461479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584201838630" />
-    <state width="1345" height="187" key="GridCell.Tab.0.center" timestamp="1584201838629">
+    <state width="1345" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202461479" />
+    <state width="1345" height="187" key="GridCell.Tab.0.center" timestamp="1584202461479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584201838629" />
-    <state width="1345" height="187" key="GridCell.Tab.0.left" timestamp="1584201838629">
+    <state width="1345" height="187" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202461479" />
+    <state width="1345" height="187" key="GridCell.Tab.0.left" timestamp="1584202461479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584201838629" />
-    <state width="1345" height="187" key="GridCell.Tab.0.right" timestamp="1584201838629">
+    <state width="1345" height="187" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202461479" />
+    <state width="1345" height="187" key="GridCell.Tab.0.right" timestamp="1584202461479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="187" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584201838629" />
+    <state width="1345" height="187" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202461479" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1583672566773">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -535,10 +542,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584180469877" />
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584185352632">
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584268277590">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584185352632" />
+    <state x="375" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584268277590" />
     <state x="324" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583934947397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
