@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeoSpatialExample/OpenCV_RasterShow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/CrayfishRice.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/ShaHu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image/YellowPeaches.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="3bb73ba3-0e9b-4cb2-9b01-f69ff48c0233" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -447,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584202456629</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="OPenCV分离出去单独建立工程，这里只讲矢量数据空间分析与处理">
+      <created>1584273708645</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1584273708646</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -475,7 +476,8 @@
     <MESSAGE value="属性分级渲染及自定义图例" />
     <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例" />
     <MESSAGE value="图像处理之轮廓提取，以沙湖轮廓提取为例，修改了显示结果的方式&#10;修改了直方图统计显示结果的方式&#10;再以稻田照片为例，进行了水稻范围提取举例" />
-    <option name="LAST_COMMIT_MESSAGE" value="图像处理之轮廓提取，以沙湖轮廓提取为例，修改了显示结果的方式&#10;修改了直方图统计显示结果的方式&#10;再以稻田照片为例，进行了水稻范围提取举例" />
+    <MESSAGE value="OPenCV分离出去单独建立工程，这里只讲矢量数据空间分析与处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="OPenCV分离出去单独建立工程，这里只讲矢量数据空间分析与处理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="25" key="#Notifications" timestamp="1582990193327">
@@ -486,10 +488,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="113" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583722328533" />
-    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584202455769">
+    <state x="334" y="0" key="CommitChangelistDialog2" timestamp="1584273706759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202455769" />
+    <state x="334" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584273706759" />
     <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1583682448296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -534,10 +536,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1583672566773" />
-    <state x="338" y="5" key="SettingsEditor" timestamp="1584202389861">
+    <state x="338" y="5" key="SettingsEditor" timestamp="1584273722301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584202389861" />
+    <state x="338" y="5" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1584273722301" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584180469877">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
